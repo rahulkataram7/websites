@@ -1,0 +1,220 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 1px;
+  grid-column-gap: 16px;
+}
+
+// Home, menu, Contact related
+body {
+    font-family: Montserrat, sans-serif;
+    color: black;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.background {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: dimgrey;
+}
+
+.hero-heading {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.hero-subheading {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 40px;
+}
+
+.home {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.content-box {
+    width: 80%;
+    max-width: 900px;
+    padding: 60px;
+    border-radius: 25px;
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.menu-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.grid {
+  grid-column-gap: 40px;
+  grid-row-gap: 1px;
+  -ms-grid-columns: 5fr 5fr 5fr;
+  grid-template-columns: 5fr 5fr 5fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-items {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-link {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.image {
+  width: 600px;
+}
+
+.nav {
+    position: absolute;
+    left: 0%;
+    top: 30px;
+    right: 0%;
+    bottom: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.menu-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 12px 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .home {
+    width: 90%;
+  }
+  .content-box {
+    width: 90%;
+  }
+  .contact-items {
+    margin-top: 1px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-btn {
+    margin-right: 1px;
+    margin-left: 1px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu-category {
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    grid-column-start: span 3;
+    -ms-grid-column-span: 3;
+    grid-column-end: span 3;
+
+  }
+}
